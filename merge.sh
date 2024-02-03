@@ -15,3 +15,5 @@ yq eval-all '(
               }
           }
         ' file1.yaml generated.yaml >output.yaml
+
+# yq e '.components.schemas.* |= . + {"x-is-generated": true}' file1.yaml >output.yaml
