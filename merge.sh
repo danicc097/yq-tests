@@ -8,4 +8,10 @@ yq eval-all '(
         ) as $new_schemas
         | select(fi == 0)
         | .components.schemas = $new_schemas *n $schemas
+        | .components.schemas += {
+              "Activity": {
+                "x-is-generated": true,
+                "$ref": "#/components/schemas/RestActivity"
+              }
+          }
         ' file1.yaml generated.yaml >output.yaml

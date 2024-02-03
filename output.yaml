@@ -21,3 +21,6 @@ components:
           type: integer
     NotGenerated:
       type: string
+    Activity:
+      x-is-generated: true
+      $ref: '#/components/schemas/RestActivity'
