@@ -1,0 +1,23 @@
+paths:
+  /something:
+    bla: 1
+components:
+  schemas:
+    Pet: #gen
+      x-is-generated: true
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        tag:
+          type: string
+    SomethingElse: #gen
+      x-is-generated: true
+      type: object
+      properties:
+        id:
+          type: integer
+    NotGenerated:
+      type: string

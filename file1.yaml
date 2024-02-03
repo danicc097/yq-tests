@@ -1,0 +1,14 @@
+paths:
+  /something:
+    bla: 1
+components:
+  schemas:
+    Pet: #file1
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+    NotGenerated: #file1
+      type: string
