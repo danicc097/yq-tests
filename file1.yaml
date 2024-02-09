@@ -4,11 +4,6 @@ paths:
 components:
   schemas:
     Pet: #file1
-      type: object
-      properties:
-        id:
-          type: integer
-        name:
-          type: string
+      this-should-not-appear: 123123
     NotGenerated: #file1
       type: string

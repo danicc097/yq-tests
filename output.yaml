@@ -3,14 +3,13 @@ paths:
     bla: 1
 components:
   schemas:
-    Pet: # This is a generated schema
+    Pet: #file1
+      only-this-field-should-appear: 1
+    NotGenerated: #file1
+      type: string
+    SomethingElse: #gen
+      x-is-generated: true
       type: object
       properties:
         id:
           type: integer
-        name:
-          type: string
-      x-is-generated: true
-    NotGenerated: # This is a generated schema
-      type: string
-      x-is-generated: true

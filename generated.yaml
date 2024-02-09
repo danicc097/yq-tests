@@ -1,15 +1,7 @@
 components:
   schemas:
     Pet:  #gen
-      x-is-generated: true
-      type: object
-      properties:
-        id:
-          type: integer
-        name:
-          type: string
-        tag:
-          type: string
+      only-this-field-should-appear: 1
     SomethingElse: #gen
       x-is-generated: true
       type: object
